@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        9- Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.
+    </h1>
+    <script>
+        n1 = parseInt(prompt("Valor 1: "));
+        n2 = parseInt(prompt("valor 2: "));
+
+        op = parseInt(prompt("Escolha uma das operações seguintes." + " 1.Adição" + " 2.Subtração" + " 3.Divisão" + " 4.Multiplicação."));
+
+        switch (op) {
+            case 1:
+                result = n1 + n2;
+                document.write("A soma dos valores é: " + result);
+                break;
+            case 2:
+                result = n1 - n2;
+                document.write("A subtração dos valores é: " + result);
+                break;
+            case 3: 
+                result = n1 / n2;
+                document.write("A divisão dos valores é: " + result);
+                break;
+            case 4:
+                result = n1 * n2;
+                document.write("A multiplicação dos valores é: " + result);
+                break;
+            default:
+                document.write("Operação não identificada!");
+                break;
+        }
+    </script>
+</body>
+</html>

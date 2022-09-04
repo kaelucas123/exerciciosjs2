@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        7 - As maçãs custam R$ 3,50 cada se forem compradas menos do que uma dúzia, e R$ 2,50 se forem compradas pelo menos doze. Escreva um programa que leia o número de maçãs compradas (considere que o usuário informará a quantidade),  calcule e escreva o valor total da compra.
+    </h1>
+    <script>
+        qnt = parseInt(prompt("Quantas maçãs você deseja comprar?"));
+        valor = qnt < 12 ? 3.50 * qnt : 2.50 * qnt;
+        document.write("O valor total à pagar: " + valor + "$")
+    </script>
+</body>
+</html>
